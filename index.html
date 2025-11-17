@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ritmo Lite</title>
+
+    <style>
+        body {
+            background: #111;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #title {
+            margin-top: 20px;
+            color: white;
+            font-size: 32px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #hud {
+            margin-top: 10px;
+            color: white;
+            font-family: Arial;
+            font-size: 24px;
+        }
+
+        canvas {
+            margin-top: 20px;
+            background: #222;
+            border: 2px solid #555;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- TÍTULO -->
+    <h1 id="title">Ritmo Lite by Diego "MisterGoo" López</h1>
+
+    <!-- HUD -->
+    <div id="hud">
+        Score: <span id="score">0</span> |
+        Combo: <span id="combo">0</span>
+    </div>
+
+    <!-- AUDIO -->
+    <audio id="hitSound" src="audio/hit.wav"></audio>
+    <audio id="bgMusic" src="audio/music.mp3" loop></audio>
+
+    <!-- CANVAS -->
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <!-- SCRIPT -->
+    <script src="game.js"></script>
+
+</body>
+</html>
